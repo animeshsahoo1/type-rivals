@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TypeRivals-profile</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+    <link rel="stylesheet" href="./expand.css">
+</head>
+<body>
+    <div class="container">
+        <div class="navbar">
+            <img src="../images/white logo.png" class="logo">
+            <div class="profile navbar-pic">
+                <img src="../images/profile.png" class="profile-img" />
+            </div>
+            <!-- <i class="fa-solid fa-user-group"></i> -->
+            <a href="../stats/stats.html"><i class="fa-solid fa-chart-simple" id="leaderboard-btn"></i></a>
+            <!-- <i class="fa-solid fa-gear"></i> -->
+            <div class="red-box" title="log-out">
+                <i class="fa-solid fa-right-from-bracket log-out"></i>
+            </div>
+        </div>
+
+
+        <div class="page">
+            <div class="details">
+                <div class="left-side">
+                    <div class="profile main-profile">
+                        <img src="../images/profile.png" class="profile-img" />
+                    </div>
+                    <div class="left-down">
+                    <p>user id:</p>
+                    <button class="user-btn" title="copy"></button>
+                    </div>
+                </div>
+                <div class="right-side">
+                    <div class="personal-info">
+                        <h3 id="name">Name: ANIMESH</h3>
+                        <p id="email">Email: ANIMESH</p>
+                        <p id="country">Country: ANIMESH</p>
+                    </div>
+                    <div class="typing-info">
+                        <p id="WPM"> WPM: </p>
+                        <p id="ACCURACY"> ACCURACY: </p>
+                        <p id="RATING">RATING: 5000 </p>
+                    </div>
+                    
+                </div>
+
+            </div>
+            <h1>BADGES</h1>
+            <div class="badges-list">
+                <div class="badge-element" id="35wpm" title="Type in 35 WPM, which is average of most people">
+                    <img src="../images/35 f.png" alt="">
+                </div>
+                <div class="badge-element" id="50wpm" title="Type with a speed of 50 WPM">
+                    <img src="../images/50 f.png" alt="">
+                </div>
+                <div class="badge-element" id="75wpm" title="Type with a speed of 75WPM">
+                    <img src="../images/75 f.png" alt="">
+                </div>
+                <div class="badge-element" id="full-accuracy" title="Achieved an accuracy of 100%">
+                    <img src="../images/Accuracy.png" alt="">
+                </div>
+                <div class="badge-element" id="top3" title="Present in the top 3 of the leaderboard">
+                    <img src="../images/top 3 f.png" alt="">
+                </div>
+                
+            </div>
+        </div>
+    </div>
+
+    <script src="./expand.js" type="module"></script>
+</body>
+</html>

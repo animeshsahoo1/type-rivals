@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="../landing_page/land.css" />
+    <!------icons from fontawesome------>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    />
+
+     <!-- box icons -->
+     <link
+     rel="stylesheet"
+     href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css"
+    />
+
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- chart.js  -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  </head>
+
+
+  <body>
+    <header>
+      
+      <img src="../images/black logo.png" class="logo">
+
+      <ul class="navlist">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#services">Our Services</a></li>
+        <li><a href="#lessons">Lessons</a></li>
+        <li><a href="#contact">Contact Us</a></li>
+      </ul>
+
+      <div class="nav-icons">
+        <a href="#" class="btn">Log in</a>
+      </div>
+
+      <div class="profile">
+        <img src="../images/profile.png" class="profile-img" />
+      </div>
+    </header>
+
+    <div class="auth" id="auth">
+      <div class="container" id="signup" style="display: none">
+        <h2 class="close"><i class="fas fa-times"></i></h2>
+
+        <h1 class="form-title">Register</h1>
+        <form method="post" action="">
+          <div id="signUpMessage" class="messageDiv" style="display: none"></div>
+          <div class="input-group">
+            <i class="fas fa-user"></i>
+            <input type="text" name="Name" id="name" placeholder="name" required />
+            <label for="name">Name</label>
+          </div>
+          <div class="input-group">
+            <i class="fas fa-globe"></i>
+            <input type="text" name="Country" id="country" placeholder="country" required />
+            <label for="country">Country</label>
+          </div>
+          <div class="input-group">
+            <i class="fas fa-envelope"></i>
+            <input
+              type="email"
+              name="email"
+              id="email"
+              placeholder="email"
+              required
+            />
+            <label for="email">Email</label>
+          </div>
+          <div class="input-group">
+            <i class="fas fa-lock"></i>
+            <input
+              type="password"
+              name="password"
+              id="password"
+              placeholder="password"
+              required
+            />
+            <label for="password">Password</label>
+          </div>
+          <input type="submit" class="btn" value="Sign Up" name="signUp" id="submitSignUp" />
+        </form>
+
+        <div class="links">
+          <p>Already have account?</p>
+          <button id="signInButton">Sign In</button>
+        </div>
+      </div>
+      <!-- ---------------------------------login----------------------------- -->
+
+      <div class="container" id="signIn">
+        <h2 class="close"><i class="fas fa-times"></i></h2>
+
+        <h1 class="form-title">Sign In</h1>
+        <form method="post" action="">
+          <div id="signInMessage" class="messageDiv" style="display: none"></div>
+
+          <div class="input-group">
+            <i class="fas fa-envelope"></i>
+            <input type="email" name="email" id="signInEmail" placeholder="email" required/>
+            <label for="signInEmail">Email</label>
+          </div>
+          <div class="input-group">
+            <i class="fas fa-lock"></i>
+            <input
+              type="password"
+              name="password"
+              id="signInpassword"
+              placeholder="password"
+              required
+            />
+            <label for="signInpassword">password</label>
+          </div>
+          <p class="recover">
+            <a href="#">Recover Password</a>
+          </p>
+          <input
+            type="submit"
+            class="btn"
+            value="Sign In"
+            name="signIn"
+            id="submitSignIn"
+          />
+        </form>
+
+        <div class="links">
+          <p>Do not have account?</p>
+          <button id="signUpButton">Sign Up</button>
+        </div>
+      </div>
+    </div>
+<!-- ----------------------------------home---------------------------------------- -->
+    <section class="home" id="home">
+      <div class="home-text">
+          <div class="main-text">
+            <h1 class="upper-text">Test Your, </h1>
+          <h1 class="down-text"> <span>Typing</span> Skills</h1>
+          </div>
+          
+  
+        <p>
+          Increase your <span >Produtivity</span> with our
+          interactive tools and practice lessons
+        </p>
+      </div>
+      
+        <div class="home-btn">
+          <a href="#" class="btn" id="big-register-btn">Get Started Now</a>
+        </div>
+      
+    </section>
+
+    <section class="second" id="about">
+      <div class="graph">
+        <canvas id="myChart" style="max-width: 60%" class="animate"></canvas>
+        <div class="graph-right">
+          <h1 style="color: #fff" class="score animate">
+            See Where You <span class="highlight">Stand</span>
+          </h1>
+          <div class="right-box animate">
+            <p>
+              35 WPM is average typing speed for most people, check where you
+              stand with our leaderboard features. <br />Gain an Increase in
+              your typing speed by at least 30% by practicing in regular
+              intervals, with help of our lessons and tests.
+            </p>
+          </div>
+          
+        </div>
+      </div>
+    </section>
+
+    <!-- --------------------------------------------------WHY US PAGE---------------------------------------------- -->
+
+    <section class="third-page" id="services">
+      <div class="container2">
+        <div class="write">
+          <h2 class="we animate">So many reasons to start</h2>
+          <p class="animate">
+            Wanna know why should you increase your typing speed?
+          </p>
+        </div>
+
+        <div class="block">
+          <div class="sub-box1 animate">
+            <img
+              class="third-image"
+              src="../images/Online learning-cuate 2.png"
+              alt=""
+            />
+            <h4>Take lessons</h4>
+            <p>
+              Take best lessons compiled from the internet, taking lessons will allow you to improve faster. learn the best techniques and tips to type faster.
+            </p>
+          </div>
+
+          <div class="sub-box1 animate">
+            <img
+              class="third-image"
+              src="../images/Learning-cuate 3.png"
+              alt=""
+            />
+            <h4>Efficiency</h4>
+            <p>
+              Learning to type faster will increase your efficiency may it be job, just chatting with friends or some other work, a small amount of effort will save you a lot of time.
+            </p>
+          </div>
+
+          <div class="sub-box1 animate">
+            <img
+              class="third-image"
+              src="../images/Business support-cuate 1.png"
+              alt=""
+            />
+            <h4>Earn Rewards</h4>
+            <p>
+              Unlock badges and get rewards by hitting milestones in accuracy, speed, and consistency. Keep practicing to claim more exciting rewards and achievements!
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ------------------------------------------Lessons--------------------------------------------- -->
+    <section class="lessons" id="lessons">
+      <div class="lesson-container">
+        <div class="lesson-text">
+          <h1 class="animate">Improve By Taking Short <span class="lesson-highlight">Lesson</span></h1>
+          <div class="right-box animate">
+            <p>Do you know the correct way of using all your fingers to type? if not check this small lesson out. by taking lessons you are more 
+            likely to improve faster than by just practicing. </p>
+          </div>
+          <div class="home-btn">
+            <a href="https://www.wikihow.com/Type-Faster" class="btn" id="lesson-btn">Take Lesson</a>
+          </div>
+        </div>
+
+        <div class="lesson-img animate">
+          <img src="../images/lesson.JPG">
+        </div>
+       
+      </div>
+
+    </section>
+
+
+    <!-- --------------------------------------------contact us---------------------------------------------->
+    <section class="contact" id="contact">
+      <div class="contact-content">
+
+          <div class="contact-text animate">
+              <h2>Contact Us</h2>
+              <p>A decent typing speed is really important in today's fast paced world.
+                Contact us through the following ways, if you have any problems or want to partner with us.
+                We will reach back to you as soon as possible within 24 hours, also follow our socials 
+                to recieve new updates about the site and other things.
+              </p>
+              <div class="social">
+                  <a href="https://www.instagram.com/?hl=en"><i class='bx bxl-instagram-alt' ></i></a>
+                  <a href="https://www.facebook.com/"><i class='bx bxl-facebook' ></i></a>
+                  <a href="https://x.com/?lang=en"><i class='bx bxl-twitter' ></i></a>
+                  <a href="https://github.com/animeshsahoo1/WOC_IIT"><i class='bx bxl-github' ></i></a>
+              </div>
+          </div>
+
+         <div class="details">
+          
+          <div class="main-d">
+              <a href="#"><i class='bx bx-mobile-alt'></i>9556322001</a>
+          </div>
+          <div class="main-d">
+              <a href="https://www.youtube.com/"><i class='bx bxl-youtube' ></i>Type-Rivals</a>
+          </div>
+          <div class="main-d">
+              <a href="#"><i class='bx bxs-bell' ></i>Subscribe</a>
+          </div>
+         </div> 
+      </div>
+   </section>
+
+
+    <script src="../landing_page/land.js" type="module"></script>
+    <script src="../landing_page/graph.js" defer></script>
+    <script src="../landing_page/bundle.js" defer></script>
+  </body>
+</html>
